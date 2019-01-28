@@ -94,7 +94,14 @@ contract ProjectDelivery is Pausable{
         projectCount = 1;
     }
     
+    /** @title Qualify Recipient. */
     function qualifyRecipient(
+    /** @dev Qualifies a recipient of projects.
+      * @param _recipient recipient to be qualified.
+      * @param _name name of the recipient.
+      * @param _qualify whether to qualify or disqualify the recipient.
+      * @return bool if function is successful.
+      */
             address _recipient,
             string memory _name, 
             bool _qualify)
